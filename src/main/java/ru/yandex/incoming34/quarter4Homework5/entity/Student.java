@@ -17,10 +17,6 @@ import lombok.NoArgsConstructor;
 @Getter
 public class Student {
 
-	enum possibleMark {
-		insufficient, sufficient, good, perfect
-	}
-
 	@Id
 	private int id;
 	private String name;

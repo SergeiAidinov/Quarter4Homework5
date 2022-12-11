@@ -5,7 +5,7 @@
 CREATE TABLE IF NOT EXISTS student (
     id    SERIAL PRIMARY KEY,
     name  VARCHAR(25) NOT NULL,
-    mark  possible_mark
+    mark  VARCHAR(12) NOT NULL
 
 );
 

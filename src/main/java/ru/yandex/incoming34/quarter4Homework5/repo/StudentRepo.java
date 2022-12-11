@@ -18,4 +18,9 @@ public interface StudentRepo extends CrudRepository<Student, Integer> {
 	@Query(nativeQuery = true, value = "UPDATE student SET mark = :mark WHERE id = :id")
 	void setMark(@Param("id") int id, @Param("mark") String mark);
 
+	@Modifying
+	@Transactional
+	@Query(nativeQuery = true, value = "UPDATE student SET name=:name, mark=:mark  WHERE id = :id")
+	void refreshStudent(@Param("id") int id, @Param("name") String name, @Param("mark") String mark);
+
 }

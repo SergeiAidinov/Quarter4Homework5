@@ -1,0 +1,10 @@
+{
+        "in": "query",
+        "name": "sample",
+        "description": "a sample parameter with an enum value",
+        "schema": {
+          "type": "string",
+          "enum": [ "1", "2"]
+        },
+        "required": true
+      }
